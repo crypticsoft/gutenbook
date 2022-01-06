@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card'
+import CardBlock from './Card'
 
 const { RichText } = wp.blockEditor
 
@@ -11,10 +11,10 @@ export default function save({ attributes }) {
 
   return (
     <div>
-      <Card
+      <CardBlock
         title={<RichText.Content tagName="h1" value={titleMarkup} />}
         content={<RichText.Content tagName="div" value={textMarkup} />}
-      ></Card>
+      ></CardBlock>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 const path = require('path')
+// const defaultConfig = require("../node_modules/@wordpress/scripts/config/webpack.config");
 
 // Export a function. Accept the base config as the only param.
 module.exports = async ({ config, mode }) => {
